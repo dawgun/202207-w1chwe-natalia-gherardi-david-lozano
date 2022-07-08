@@ -1,0 +1,26 @@
+{
+  "name": "challenge_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compilador-sass": "sass sass/style.scss css/style.css --watch",
+    "compilador-sass-nowatch": "sass sass/style.scss css/style.css",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawgun/202207-w1chwe-natalia-gherardi-david-lozano.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawgun/202207-w1chwe-natalia-gherardi-david-lozano/issues"
+  },
+  "homepage": "https://github.com/dawgun/202207-w1chwe-natalia-gherardi-david-lozano#readme",
+  "devDependencies": {
+    "sass": "^1.53.0",
+    "husky": "^8.0.0"
+  }
+}
