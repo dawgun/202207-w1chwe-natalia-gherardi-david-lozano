@@ -32,3 +32,74 @@ h1 {
   border: 0;
   color: colors.$primary-color;
 }
+
+.main-search {
+  padding: 2rem;
+  border-bottom: 1px solid;
+  border-color: #d9dbe0;
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 700px) {
+    &__form {
+      flex-direction: row;
+    }
+  }
+
+  &__button {
+    background-color: #ed2e7e;
+    height: 2.5rem;
+    min-width: 100%;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+  }
+
+  @media (min-width: 700px) {
+    &__button {
+      min-width: 0;
+      flex: 0.8;
+    }
+  }
+
+  &__input {
+    border-radius: 7px;
+    height: 2rem;
+    min-width: 100%;
+    background-color: #f7f7fc;
+
+    &::placeholder {
+      padding-left: 10px;
+    }
+    &::-webkit-calendar-picker-indicator {
+      opacity: 100;
+    }
+  }
+  @media (min-width: 700px) {
+    &__input {
+      min-width: 0;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  input[list="destination"] {
+    flex: 2;
+  }
+
+  input[list="calendary"] {
+    flex: 1;
+  }
+  input[list="people"] {
+    flex: 1;
+  }
+}
