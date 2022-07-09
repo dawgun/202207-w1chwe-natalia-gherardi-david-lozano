@@ -1,3 +1,4 @@
+@use "variables/colors";
 * {
   box-sizing: border-box;
 }
@@ -10,4 +11,14 @@ body {
 h1,
 h2 {
   margin: 0;
+}
+.general-container {
+  margin: 2rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  color: colors.$primary-color;
 }
