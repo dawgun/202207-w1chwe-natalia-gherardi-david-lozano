@@ -7,5 +7,31 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <title>Travelulu</title>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <h2>Find deals on hotels, homes and much more...</h2>
+      <form>
+        <input
+          placeholder="Where are you going?"
+          type="text"
+          list="destination"
+        />
+        <datalist id="destination">
+          <option>Barcelona</option>
+          <option>Madrid</option>
+          <option>Malgga</option>
+          <option>Valencia</option>
+        </datalist>
+        <input placeholder="Check-in Check-out" type="text" list="calendary" />
+        <datalist id="calendary">
+          <option></option>
+        </datalist>
+        <input placeholder="2 adults - 0 children" type="text" list="people" />
+        <datalist id="people">
+          <option></option>
+        </datalist>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </body>
 </html>
