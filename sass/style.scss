@@ -1,3 +1,38 @@
+@use "variables/colors";
+@use "variables/main";
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Poppins, sans-serif;
+}
+body {
+  margin: 0;
+}
+h1,
+h2 {
+  margin: 0;
+}
+.general-container {
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bca4ff59;
+  padding: 30px;
+}
+h1 {
+  color: colors.$primary-color;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.menu-button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: 0;
+  color: colors.$primary-color;
+}
+
 .main-search {
   padding: 2rem;
   border-bottom: 1px solid;
@@ -55,6 +90,7 @@
     }
   }
 }
+
 @media (min-width: 700px) {
   input[list="destination"] {
     flex: 2;
