@@ -13,7 +13,8 @@ h1,
 h2 {
   margin: 0;
 }
-.general-container {
+.general-container > * {
+  padding: main.$main-padding;
 }
 .header {
   display: flex;
