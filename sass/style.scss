@@ -1,5 +1,8 @@
 @use "variables/colors";
 @use "variables/main";
+@use "variables/global";
+@use "components/header";
+@use "components/main-search";
 @use "components/secondary-search";
 @use "components/search-results";
 @use "components/notices";

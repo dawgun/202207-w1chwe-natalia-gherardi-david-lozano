@@ -20,7 +20,6 @@
       flex-direction: row;
     }
   }
-
   @media (min-width: 700px) {
     &__button {
       min-width: 0%;
@@ -30,6 +29,25 @@
   &__input {
     border: 2px solid colors.$dark-font-color;
     margin-bottom: 1.5rem;
-    font-family: variables.$font-family;
+    font-family: main.$font-family;
+    @media (min-width: 700px) {
+      __input {
+        min-width: 0;
+      }
+    }
+
+    @media (min-width: 700px) {
+      input[list="destination"] {
+        flex: 2;
+      }
+
+      input[list="calendary"] {
+        flex: 1;
+      }
+
+      input[list="people"] {
+        flex: 1;
+      }
+    }
   }
 }
