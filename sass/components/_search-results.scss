@@ -1,7 +1,14 @@
 @use "../variables/colors";
+
 .search-results {
+  flex: 4;
   &__title {
     padding-bottom: 2rem;
+  }
+  @media (min-width: 700px) {
+    &__title {
+      font-size: 2rem;
+    }
   }
 
   &__house-image {
@@ -25,6 +32,9 @@
   &__list {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid #bca4ff59;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
   }
 
   @media (min-width: 700px) {
