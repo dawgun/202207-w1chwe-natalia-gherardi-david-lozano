@@ -1,3 +1,4 @@
+@use "../variables/colors";
 .search-results {
   &__title {
     padding-bottom: 2rem;
@@ -18,7 +19,7 @@
     height: 1.375rem;
   }
   &__house-title {
-    color: #5f2eea;
+    color: colors.$primary-color;
   }
 
   &__list {
@@ -33,9 +34,9 @@
   }
 
   &__button {
-    color: #5f2eea;
+    color: colors.$primary-color;
     background-color: transparent;
-    border-color: #d9dbe9;
+    border-color: colors.$light-color;
     width: 10.75rem;
     height: 2.5rem;
     letter-spacing: 2px;
@@ -52,11 +53,11 @@
   }
 
   &__link-map {
-    color: #5f2eea;
+    color: colors.$primary-color;
     text-decoration: none;
   }
 
   .fa-location-dot {
-    color: #5f2eea;
+    color: colors.$primary-color;
   }
 }
