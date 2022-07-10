@@ -125,11 +125,12 @@ h1 {
     height: 3rem;
     margin-top: 0.8rem;
   }
-}
-.secondary-search__tittle {
-  margin-bottom: 1.3rem;
-  font-weight: 600;
-}
-label {
-  font-size: 1rem;
+  &__title {
+    margin-bottom: 1.3rem;
+    font-weight: 600;
+  }
+
+  & label {
+    font-size: 1rem;
+  }
 }
