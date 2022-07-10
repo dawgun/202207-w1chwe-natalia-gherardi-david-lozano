@@ -8,35 +8,40 @@
   font-family: Poppins;
   border-radius: 1rem;
 }
-.notices__advertise {
-  background-color: #f2fffb;
-  border: 2px solid #00ba88;
-  margin-bottom: 2rem;
-  p {
-    color: #00966d;
-    font-weight: 500;
-    margin: 0;
+.notices {
+  &__advertise {
+    background-color: #f2fffb;
+    border: 2px solid #00ba88;
+    margin-bottom: 2rem;
+    p {
+      color: #00966d;
+      font-weight: 500;
+      margin: 0;
+      margin-right: 3rem;
+    }
   }
-}
-.notices__symbol {
-  margin: 0.8rem;
-  font-size: 1.5rem;
-  position: relative;
-  bottom: 1rem;
-}
-.notices__button {
-  border: 0;
-  background-color: transparent;
-}
-.notices .notices__button-cancel {
-  font-size: 0.8rem;
-}
-.notices__warning {
-  background-color: #fff3f8;
-  border: 2px solid #ed2e7e;
-  p {
-    color: #ed2e7e;
-    font-weight: 500;
-    margin: 0;
+  &__symbol {
+    margin: 0.8rem;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 1rem;
+  }
+  &__button {
+    border: 0;
+    background-color: transparent;
+    margin-left: auto;
+  }
+  &__button-cancel {
+    font-size: 0.8rem;
+  }
+  &__warning {
+    background-color: #fff3f8;
+    border: 2px solid #ed2e7e;
+    p {
+      color: #ed2e7e;
+      font-weight: 500;
+      margin: 0;
+      margin-right: 3rem;
+    }
   }
 }
