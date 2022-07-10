@@ -1,0 +1,35 @@
+@use "../variables/main";
+@use "../variables/colors";
+.main-search {
+  border-bottom: 1px solid;
+  border-color: colors.$light-color;
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 700px) {
+    &__form {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 700px) {
+    &__button {
+      min-width: 0%;
+      flex: 0.8;
+    }
+  }
+  &__input {
+    border: 2px solid colors.$dark-font-color;
+    margin-bottom: 1.5rem;
+    font-family: variables.$font-family;
+  }
+}
