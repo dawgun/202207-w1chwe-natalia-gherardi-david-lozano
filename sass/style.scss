@@ -107,13 +107,25 @@ h1 {
     flex: 1;
   }
 }
+
+@media (min-width: 700px) {
+  .container-search-results {
+    display: flex;
+  }
+}
+
 .secondary-search {
   background-color: #2a00a2;
   color: #bca4ff;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  flex: 1;
+  max-height: 31rem;
+
   &__title {
     font-size: 16px;
   }
