@@ -3,6 +3,7 @@
 
 @use "components/search-results";
 @use "components/banner-contact";
+@use "components/footer";
 
 * {
   box-sizing: border-box;
@@ -16,6 +17,7 @@ body {
 h1,
 h2 {
   margin: 0;
+  padding-bottom: 1rem;
 }
 .general-container > * {
   padding: main.$main-padding;
