@@ -12,10 +12,10 @@
 .notices {
   &__advertise {
     background-color: colors.$notice-1-background-color;
-    border: 2px solid colors.$notice-1-color;
+    border: 2px solid colors.$light-color;
     margin-bottom: 2rem;
     p {
-      color: colors.$notice-1-color;
+      color: colors.$light-color;
       font-weight: 500;
       margin: 0;
       margin-right: 3rem;
@@ -36,10 +36,10 @@
     font-size: 0.8rem;
   }
   &__warning {
-    background-color: colors.$notice-2-background-color;
-    border: 2px solid colors.$notice-2-color;
+    background-color: colors.$terciary-color-light;
+    border: 2px solid colors.$terciary-color;
     p {
-      color: colors.$notice-2-color;
+      color: colors.$terciary-color;
       font-weight: 500;
       margin: 0;
       margin-right: 3rem;
