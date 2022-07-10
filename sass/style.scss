@@ -20,7 +20,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #bca4ff59;
-  padding: 30px;
 }
 h1 {
   color: colors.$primary-color;
@@ -33,9 +32,15 @@ h1 {
   border: 0;
   color: colors.$primary-color;
 }
-
+.results-button {
+  background-color: #ed2e7e;
+  height: 2.5rem;
+  min-width: 100%;
+  color: white;
+  border-radius: 20px;
+  border-style: none;
+}
 .main-search {
-  padding: 2rem;
   border-bottom: 1px solid;
   border-color: #d9dbe0;
 
@@ -57,12 +62,6 @@ h1 {
   }
 
   &__button {
-    background-color: #ed2e7e;
-    height: 2.5rem;
-    min-width: 100%;
-    color: white;
-    border-radius: 20px;
-    border-style: none;
   }
 
   @media (min-width: 700px) {
@@ -71,27 +70,28 @@ h1 {
       flex: 0.8;
     }
   }
-
   &__input {
-    border-radius: 7px;
-    height: 2rem;
-    min-width: 100%;
-    background-color: #f7f7fc;
-
-    &::placeholder {
-      padding-left: 10px;
-    }
-    &::-webkit-calendar-picker-indicator {
-      opacity: 100;
-    }
-  }
-  @media (min-width: 700px) {
-    &__input {
-      min-width: 0;
-    }
+    border: 2px solid #14142b;
   }
 }
+.input {
+  border-radius: 16px;
+  height: 2.5rem;
+  min-width: 100%;
+  background-color: #f7f7fc;
 
+  &::placeholder {
+    padding-left: 10px;
+  }
+  &::-webkit-calendar-picker-indicator {
+    opacity: 100;
+  }
+}
+@media (min-width: 700px) {
+  __input {
+    min-width: 0;
+  }
+}
 @media (min-width: 700px) {
   input[list="destination"] {
     flex: 2;
@@ -106,7 +106,27 @@ h1 {
 }
 .secondary-search {
   background-color: #2a00a2;
+  color: #bca4ff;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  margin: 30px;
+  &__title {
+    font-size: 16px;
+  }
+  &__input {
+    background-image: "&#xf073";
+    margin-bottom: 12px;
+  }
+  &__button {
+    height: 3rem;
+    margin-top: 0.8rem;
+  }
+}
+.secondary-search__tittle {
+  margin-bottom: 1.3rem;
+  font-weight: 600;
+}
+label {
+  font-size: 1rem;
 }
