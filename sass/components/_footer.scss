@@ -1,3 +1,5 @@
+@use "../variables/colors";
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -22,12 +24,16 @@
   &__contact {
     text-align: center;
   }
-  & ul {
+  ul,
+  ol,
+  span {
     list-style: none;
     padding: 0;
+    color: colors.$light-font-color;
   }
   &__contact > a {
     text-decoration: none;
+    color: colors.$primary-color;
   }
 }
 
