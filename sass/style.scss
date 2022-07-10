@@ -1,5 +1,8 @@
 @use "variables/colors";
 @use "variables/main";
+
+@use "components/search-results";
+
 * {
   box-sizing: border-box;
 }
