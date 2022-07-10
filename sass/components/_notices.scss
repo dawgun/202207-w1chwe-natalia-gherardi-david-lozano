@@ -11,11 +11,11 @@
 }
 .notices {
   &__advertise {
-    background-color: colors.$notice-1-background-color;
-    border: 2px solid colors.$light-color;
+    background-color: colors.$notice-1-color-light;
+    border: 2px solid colors.$notice-1-color;
     margin-bottom: 2rem;
     p {
-      color: colors.$light-color;
+      color: colors.$notice-1-color;
       font-weight: 500;
       margin: 0;
       margin-right: 3rem;
