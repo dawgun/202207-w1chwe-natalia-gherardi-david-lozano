@@ -1,5 +1,8 @@
 @use "variables/colors";
 @use "variables/main";
+
+@use "components/search-results";
+
 * {
   box-sizing: border-box;
 }
@@ -102,68 +105,5 @@ h1 {
   }
   input[list="people"] {
     flex: 1;
-  }
-}
-
-.search-results {
-  &__title {
-    padding-bottom: 2rem;
-  }
-
-  &__house-image {
-    height: 12.75rem;
-    width: 17rem;
-    margin-right: 2.1rem;
-  }
-
-  &__info {
-    position: relative;
-  }
-
-  &__star {
-    width: 1.375rem;
-    height: 1.375rem;
-  }
-  &__house-title {
-    color: #5f2eea;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media (min-width: 700px) {
-    &__list {
-      flex-direction: row;
-    }
-  }
-
-  &__button {
-    color: #5f2eea;
-    background-color: transparent;
-    border-color: #d9dbe9;
-    width: 10.75rem;
-    height: 2.5rem;
-    letter-spacing: 2px;
-    border-radius: 50px;
-    border-style: solid;
-  }
-
-  @media (min-width: 700px) {
-    &__button {
-      position: absolute;
-      right: 0;
-      top: -10px;
-    }
-  }
-
-  &__link-map {
-    color: #5f2eea;
-    text-decoration: none;
-  }
-
-  .fa-location-dot {
-    color: #5f2eea;
   }
 }
