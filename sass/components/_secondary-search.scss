@@ -1,0 +1,32 @@
+.secondary-search {
+  background-color: #2a00a2;
+  color: #bca4ff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  flex: 1;
+  max-height: 31rem;
+
+  &__title {
+    font-size: 16px;
+  }
+  &__input {
+    background-image: "&#xf073";
+    margin-bottom: 12px;
+  }
+  &__button {
+    height: 3rem;
+    margin-top: 0.8rem;
+  }
+  &__title {
+    margin-bottom: 1.3rem;
+    font-weight: 600;
+  }
+
+  & label {
+    font-size: 1rem;
+  }
+}
