@@ -2,7 +2,6 @@
 
 .search-results {
   flex: 4;
-
   p {
     max-width: 25rem;
     color: colors.$light-font-color;
@@ -58,6 +57,7 @@
     letter-spacing: 2px;
     border-radius: 50px;
     border-style: solid;
+    cursor: pointer;
   }
 
   @media (min-width: 700px) {
@@ -75,5 +75,11 @@
 
   .fa-location-dot {
     color: colors.$primary-color;
+  }
+}
+
+@media (min-width: 700px) {
+  .search-results {
+    margin-left: 2rem;
   }
 }

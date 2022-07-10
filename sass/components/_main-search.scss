@@ -33,12 +33,6 @@
   }
 
   @media (min-width: 700px) {
-    __input {
-      min-width: 0;
-    }
-  }
-
-  @media (min-width: 700px) {
     input[list="destination"] {
       flex: 2;
     }
@@ -49,6 +43,12 @@
 
     input[list="people"] {
       flex: 1;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .input {
+      min-width: 0;
     }
   }
 }
