@@ -2,6 +2,12 @@
 
 .search-results {
   flex: 4;
+
+  p {
+    max-width: 25rem;
+    color: colors.$light-font-color;
+  }
+
   &__title {
     padding-bottom: 2rem;
   }
@@ -57,7 +63,7 @@
   @media (min-width: 700px) {
     &__button {
       position: absolute;
-      right: 0;
+      right: -125px;
       top: -10px;
     }
   }

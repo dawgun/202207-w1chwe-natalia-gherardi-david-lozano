@@ -22,6 +22,8 @@ h2 {
 }
 .general-container > * {
   padding: main.$main-padding;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .header {
   display: flex;
