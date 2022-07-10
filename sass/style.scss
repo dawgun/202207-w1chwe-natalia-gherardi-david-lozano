@@ -1,54 +1,12 @@
 @use "variables/colors";
 @use "variables/main";
+@use "variablers/global";
 @use "components/secondary-search";
 @use "components/search-results";
 @use "components/notices";
 @use "components/banner-contact";
 @use "components/footer";
 
-* {
-  box-sizing: border-box;
-}
-html {
-  font-family: Poppins, sans-serif;
-}
-body {
-  margin: 0;
-}
-h1,
-h2 {
-  margin: 0;
-  padding-bottom: 1rem;
-}
-.general-container > * {
-  padding: main.$main-padding;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid colors.$primary-background-color;
-}
-h1 {
-  color: colors.$primary-color;
-  font-size: 2rem;
-  font-weight: 700;
-}
-.menu-button {
-  font-size: 1.5rem;
-  background-color: transparent;
-  border: 0;
-  color: colors.$primary-color;
-}
-.results-button {
-  background-color: colors.$terciary-color;
-  height: 2.5rem;
-  min-width: 100%;
-  color: colors.$light-color;
-  border-radius: 20px;
-  border-style: none;
-}
 .main-search {
   border-bottom: 1px solid;
   border-color: colors.$light-color;
@@ -80,19 +38,7 @@ h1 {
     border: 2px solid colors.$dark-font-color;
   }
 }
-.input {
-  border-radius: 16px;
-  height: 2.5rem;
-  min-width: 100%;
-  background-color: colors.$light-color;
 
-  &::placeholder {
-    padding-left: 10px;
-  }
-  &::-webkit-calendar-picker-indicator {
-    opacity: 100;
-  }
-}
 @media (min-width: 700px) {
   __input {
     min-width: 0;
