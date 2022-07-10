@@ -1,0 +1,43 @@
+@use "../variables/colors";
+
+.banner-contact {
+  background-color: colors.$primary-color;
+  margin: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 37.8rem;
+  }
+
+  &__title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  &__button {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    height: 4rem;
+    width: 20rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 700px) {
+    &__button {
+      width: 15.1rem;
+    }
+  }
+}

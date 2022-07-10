@@ -2,6 +2,7 @@
 @use "variables/main";
 
 @use "components/search-results";
+@use "components/banner-contact";
 
 * {
   box-sizing: border-box;
@@ -62,9 +63,6 @@ h1 {
     &__form {
       flex-direction: row;
     }
-  }
-
-  &__button {
   }
 
   @media (min-width: 700px) {
