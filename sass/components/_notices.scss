@@ -1,0 +1,47 @@
+.notices > div {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  min-width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+  font-family: Poppins;
+  border-radius: 1rem;
+}
+.notices {
+  &__advertise {
+    background-color: #f2fffb;
+    border: 2px solid #00ba88;
+    margin-bottom: 2rem;
+    p {
+      color: #00966d;
+      font-weight: 500;
+      margin: 0;
+      margin-right: 3rem;
+    }
+  }
+  &__symbol {
+    margin: 0.8rem;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 1rem;
+  }
+  &__button {
+    border: 0;
+    background-color: transparent;
+    margin-left: auto;
+  }
+  &__button-cancel {
+    font-size: 0.8rem;
+  }
+  &__warning {
+    background-color: #fff3f8;
+    border: 2px solid #ed2e7e;
+    p {
+      color: #ed2e7e;
+      font-weight: 500;
+      margin: 0;
+      margin-right: 3rem;
+    }
+  }
+}
