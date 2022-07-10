@@ -1,3 +1,4 @@
+@use "../variables/colors";
 .notices > div {
   display: flex;
   align-items: center;
@@ -10,11 +11,11 @@
 }
 .notices {
   &__advertise {
-    background-color: #f2fffb;
-    border: 2px solid #00ba88;
+    background-color: colors.$notice-1-color-light;
+    border: 2px solid colors.$notice-1-color;
     margin-bottom: 2rem;
     p {
-      color: #00966d;
+      color: colors.$notice-1-color;
       font-weight: 500;
       margin: 0;
       margin-right: 3rem;
@@ -35,10 +36,10 @@
     font-size: 0.8rem;
   }
   &__warning {
-    background-color: #fff3f8;
-    border: 2px solid #ed2e7e;
+    background-color: colors.$terciary-color-light;
+    border: 2px solid colors.$terciary-color;
     p {
-      color: #ed2e7e;
+      color: colors.$terciary-color;
       font-weight: 500;
       margin: 0;
       margin-right: 3rem;
