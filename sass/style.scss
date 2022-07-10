@@ -26,7 +26,7 @@ h2 {
 .header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #bca4ff59;
+  border-bottom: 1px solid colors.$primary-background-color;
 }
 h1 {
   color: colors.$primary-color;
@@ -40,16 +40,16 @@ h1 {
   color: colors.$primary-color;
 }
 .results-button {
-  background-color: #ed2e7e;
+  background-color: colors.$terciary-color;
   height: 2.5rem;
   min-width: 100%;
-  color: white;
+  color: colors.$light-color;
   border-radius: 20px;
   border-style: none;
 }
 .main-search {
   border-bottom: 1px solid;
-  border-color: #d9dbe0;
+  border-color: colors.$light-color;
 
   &__title {
     font-size: 1.5rem;
@@ -75,14 +75,14 @@ h1 {
     }
   }
   &__input {
-    border: 2px solid #14142b;
+    border: 2px solid colors.$dark-font-color;
   }
 }
 .input {
   border-radius: 16px;
   height: 2.5rem;
   min-width: 100%;
-  background-color: #f7f7fc;
+  background-color: colors.$light-color;
 
   &::placeholder {
     padding-left: 10px;
@@ -106,11 +106,5 @@ h1 {
   }
   input[list="people"] {
     flex: 1;
-  }
-}
-
-@media (min-width: 700px) {
-  .container-search-results {
-    display: flex;
   }
 }

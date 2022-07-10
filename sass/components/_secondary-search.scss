@@ -1,6 +1,13 @@
+@use "../variables/colors";
+
+@media (min-width: 700px) {
+  .container-search-results {
+    display: flex;
+  }
+}
 .secondary-search {
-  background-color: #2a00a2;
-  color: #bca4ff;
+  background-color: colors.$primary-color;
+  color: colors.$light-color;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
